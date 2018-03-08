@@ -4,3 +4,36 @@
 ul, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
+body {
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: "ArialMT-Regular";
+  src: url("../fonts/ArialMT/arial-mt.ttf");
+  src: url("../fonts/ArialMT/arial-mt.eot#iefix") format("embedded-opentype"),
+  url("../fonts/ArialMT/arial-mt.woff") format("woff"),
+  url("../fonts/ArialMT/arial-mt.woff2") format("woff2"),
+  url("../fonts/ArialMT/arial-mt.ttf") format("truetype"),
+  url("../fonts/ArialMT/arial-mt.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Drugs-Regular";
+  src: url("../fonts/Drugs/drugs.ttf");
+  src: url("../fonts/Drugs/drugs.eot#iefix") format("embedded-opentype"),
+  url("../fonts/Drugs/drugs.woff") format("woff"),
+  url("../fonts/Drugs/drugs.ttf") format("truetype"),
+  url("../fonts/Drugs/drugs.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Global Fonts
+$global-arial-regular: "ArialMT-Regular";
+$global-drugs-regular: "Drugs-Regular";
+
+@import "partials/home";
+
