@@ -1,11 +1,14 @@
 .main-screen {
   width: 100%;
   height: 100vh;
-  background: url(../img/main-foto.png) no-repeat;
+  background: url(../img/mob/main-foto.png) no-repeat;
   background-size: 100% 100%;
+  z-index: -1;
 }
 .ml-header {
   position: fixed;
+  z-index: 9999;
+
   width: 100%;
   .ml-logo {
     float: left;
