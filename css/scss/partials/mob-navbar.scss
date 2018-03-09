@@ -89,14 +89,20 @@
   text-align: right;
   margin-top: 68px;
   position: fixed;
-  right: 10%;
-}
+  right: 11%;
 
-  .nav-link {
-    color: #ffffff;
-    font-family: $global-drugs-regular;
-    line-height: 35px;
-    padding: 0;
+  .nav-item:last-child {
+    margin: 130px 5px 0 60px;
+    a svg {
+      font-size: 36px;
+      margin-top: 10px;
+    }
   }
-
+}
+.nav-link {
+  color: #ffffff;
+  font-family: $global-drugs-regular;
+  line-height: 35px;
+  padding: 0;
+}
 // End navbar styles
