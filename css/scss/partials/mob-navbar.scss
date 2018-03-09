@@ -1,16 +1,15 @@
 // Navbar styles
 .ml-navbar {
   float: right;
+  margin: 15px;
   padding: 0;
 
   .m-toggle {
     background: transparent;
     border: none;
     outline: none;
-    position: absolute;
     padding: 0;
-    top: 0;
-    right: 0;
+
   }
 
   .nav-icon1 {
@@ -87,10 +86,11 @@
 }
 
 .navbar-collapse {
-  float: right;
   text-align: right;
-  margin-right: 22px;
   margin-top: 68px;
+  position: fixed;
+  right: 10%;
+}
 
   .nav-link {
     color: #ffffff;
@@ -98,5 +98,5 @@
     line-height: 35px;
     padding: 0;
   }
-}
+
 // End navbar styles

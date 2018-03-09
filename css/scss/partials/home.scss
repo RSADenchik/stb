@@ -3,22 +3,15 @@
   height: 100vh;
   background: url(../img/main-foto.png) no-repeat;
   background-size: 100% 100%;
-
-
-
-  .ml-header {
-    margin-top: 15px;
-
-    .ml-logo {
-      float: left;
-
-      .logo-link{
-        display: block;
-    }
+}
+.ml-header {
+  position: fixed;
+  width: 100%;
+  .ml-logo {
+    float: left;
+    margin: 15px;
+    .logo-link{
+      display: block;
     }
   }
-
-}
-.grad {
-  box-shadow: 6px 6px #989898, 12px 12px #6c6666;
 }
