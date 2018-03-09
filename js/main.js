@@ -7,7 +7,7 @@ $(document).ready(function(){
         // Overlay background if navbar menu open
 
         if($(this).hasClass('open')){
-            $('<div class="overlay">&nbsp;</div>').prependTo('body');
+            $('<div class="d-md-none overlay">&nbsp;</div>').prependTo('body');
         }
             else {
             $('.overlay').remove();
