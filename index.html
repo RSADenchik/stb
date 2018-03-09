@@ -14,62 +14,85 @@
         <link href="css/main.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container-fluid d-md-none">
-            <div class="row">
-                <!--main page screen-->
-                <div class="main-screen"></div>
-                    <!--Mobile header-->
-                <header class="ml-header">
-
-                    <!--logo block-->
-                    <div class="ml-logo">
-                        <a href="#home" class="logo-link"><img class="logo-mob" src="img/mob/logo-mob.png" alt="logo"></a>
+            <!--main page block-->
+         <div class="main-screen d-md-none">
+            <!--Mobile header-->
+            <header class="ml-header">
+                <!--logo block-->
+                <div class="ml-logo">
+                    <a href="#home" class="logo-link"><img class="logo-mob" src="img/mob/logo-mob.png" alt="logo"></a>
+                </div>
+                <!--end logo block-->
+                <!--navbar block-->
+                <nav class="navbar ml-navbar">
+                    <div class="nav-icon1 navbar-toggler m-toggle" data-toggle="collapse" data-target="#nav-toggle" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <!--end logo block-->
-
-                    <!--navbar block-->
-                    <nav class="navbar ml-navbar">
-                        <button type="button" class="navbar-toggler m-toggle" data-toggle="collapse" data-target="#nav-toggle" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                            <div class="nav-icon1">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </button>
-                    </nav>
-
-                    <div class="collapse navbar-collapse" id="nav-toggle">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">MAIN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">VIDEOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">PHOTOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">CONTACTS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="nav-link" href="#"><i class="fab fa-vimeo-v"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--end navbar block-->
-                </header>
-                <!--End mobile header-->
-            </div>
+                </nav>
+                <div class="collapse navbar-collapse" id="nav-toggle">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">MAIN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">VIDEOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PHOTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="nav-link" href="#"><i class="fab fa-vimeo-v"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--end navbar block-->
+            </header>
+            <!--End mobile header-->
+             <a class="arrow-down" href=""><img src="../img/mob/arrow-down.png" alt=""></a>
         </div>
+            <!--end main page block-->
 
-    <!--Scripts-->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/fontawesome-all.js"></script>
-    <script src="js/main.js"></script>
+            <!--Video Block-->
+         <div id="videoCarousel" class="carousel slide video-screen" data-ride="carousel" data-interval="false">
+             <a class="video-btn" href="#">VIDEOS</a>
+             <a class="arrow-down" href=""><img src="../img/mob/arrow-down.png" alt=""></a>
+             <ol class="carousel-indicators">
+                 <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
+                 <li data-target="#videoCarousel" data-slide-to="1"></li>
+                 <li data-target="#videoCarousel" data-slide-to="2"></li>
+                 <li data-target="#videoCarousel" data-slide-to="3"></li>
+             </ol>
+             <div class="carousel-inner">
+                 <div class="carousel-item active">
+                     <img class="carousel-img" src="../img/mob/video-screen1.png" alt="">
+                 </div>
+                 <div class="carousel-item">
+                     <img class="carousel-img" src="../img/mob/video-screen2.png" alt="">
+                 </div>
+                 <div class="carousel-item">
+                     <img class="carousel-img" src="../img/mob/video-screen3.png" alt="">
+                 </div>
+                 <div class="carousel-item">
+                     <img class="carousel-img" src="../img/mob/video-screen4.png" alt="">
+                 </div>
+             </div>
+         </div>
+            <!--End Video Block-->
+
+        <!--Scripts-->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/fontawesome-all.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/main.js"></script>
 
     </body>
+
 </html>

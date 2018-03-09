@@ -12,6 +12,9 @@ $(document).ready(function(){
             else {
             $('.overlay').remove();
         }
+        return true;
     });
-    return true;
+
+    //end mobile navbar menu
+
 });
