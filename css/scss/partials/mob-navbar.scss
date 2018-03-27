@@ -94,10 +94,9 @@
   }
 
   .nav-item:last-child {
-    margin-top: 115px;
-    position: relative;
-    right: -60%;
-    width: 35%;
+    position: absolute;
+    right: 0;
+    top: 250px;
     a svg {
       font-size: 36px;
       margin-top: 10px;
