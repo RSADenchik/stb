@@ -1,6 +1,12 @@
-.carousel-img {
-  width: 100%;
+.photo-screen, .video-screen{
   height: 100vh;
+}
+.item {
+  height: 100vh;
+}
+.carousel-inner .item .carousel-img {
+  width: 100%;
+  height: 100%;
 }
 .carousel-indicators {
   bottom: 58px;
@@ -8,11 +14,13 @@
 .carousel-indicators li {
   width: 12px;
   height: 12px;
-  margin-right: 7px;
-  margin-left: 7px;
+  margin: 0 7px;
   border: 2px solid rgba(255,255,255,.5);
   background-color: transparent;
   border-radius: 100%;
+}
+.carousel-indicators .active {
+  margin: 0 7px;
 }
 .slider-btn {
   width: 76px;

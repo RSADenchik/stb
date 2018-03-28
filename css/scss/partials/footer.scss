@@ -2,6 +2,9 @@
   color: #ffffff;
   font-size: 30px;
   margin-left: 12px;
+  &:active, &:hover {
+    color: #5bc0de;
+  }
 }
 .footer-mail {
   font-family: $global-drugs-regular;
