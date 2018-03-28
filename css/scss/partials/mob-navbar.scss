@@ -2,7 +2,7 @@
 .ml-navbar {
   float: right;
   margin: 15px;
-  padding: 0;
+  border: none;
 
   .m-toggle {
     background: transparent;
@@ -85,28 +85,38 @@
 }
 
 .navbar-collapse {
-  text-align: right;
-  margin-top: 68px;
   position: fixed;
-  right: 11%;
+  top: 14%;
+  right: 7%;
+  text-align: right;
+  box-shadow: none;
+  border: none;
   .navbar-nav {
     margin: 0;
   }
 
   .nav-item:last-child {
-    position: absolute;
-    right: 0;
-    top: 250px;
+    margin-top: 80px;
+    float: right;
     a svg {
       font-size: 36px;
       margin-top: 10px;
     }
   }
 }
-.nav-link {
+.navbar-collapse.in {
+  overflow-y: visible;
+}
+.navbar-nav li .nav-link {
+  display: block;
   color: #ffffff;
   font-family: $global-drugs-regular;
-  line-height: 35px;
+  font-weight: 700;
+  line-height: 40px;
   padding: 0;
+
+  &:active, &:hover {
+    color: #5bc0de;
+  }
 }
 // End navbar styles
