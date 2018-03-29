@@ -22,7 +22,7 @@ $(document).ready(function(){
     (function() {
         var delay = false;
 
-        $(document).on('mousewheel DOMMouseScroll', function(event) {
+        $(document).on('mousewheel DOMMouseScroll touchmove', function(event) {
             event.preventDefault();
             if(delay) return;
 
