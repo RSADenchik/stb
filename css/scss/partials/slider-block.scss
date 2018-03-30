@@ -7,10 +7,16 @@
 .carousel-inner .item .carousel-img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .carousel-indicators {
   bottom: 58px;
+  margin: 0 auto;
+  width: auto;
+  left: 31%;
+  right: 31%;
 }
+
 .carousel-indicators li {
   width: 12px;
   height: 12px;
@@ -21,6 +27,9 @@
 }
 .carousel-indicators .active {
   margin: 0 7px;
+}
+.carousel-control{
+  width: 50%;
 }
 .slider-btn {
   width: 76px;
