@@ -22,7 +22,7 @@ $(document).ready(function(){
     (function() {
         var delay = false;
 
-        $(document).on('mousewheel DOMMouseScroll touchmove', function(event) {
+        $(document).on('touchmove mousewheel DOMMouseScroll', function(event) {
             event.preventDefault();
             if(delay) return;
 
@@ -31,7 +31,7 @@ $(document).ready(function(){
 
             var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
 
-            var a= document.getElementsByTagName('section');
+            var a= $('section');
             if(wd < 0) {
                 for(var i = 0 ; i < a.length ; i++) {
                     var t = a[i].getClientRects()[0].top;
@@ -52,7 +52,29 @@ $(document).ready(function(){
         });
     })();
 
-    // end function scroll height +100vh
+    // $(document).on('touchstart', function (e) {
+    //     e.preventDefault();
+    //     var startX = e.originalEvent.changedTouches[0].pageX,
+    //         startY = e.originalEvent.changedTouches[0].pageY;
+    //     this.element.one('touchend', function (e) {
+    //         if (!this.canScroll) {
+    //             return;
+    //         }
+    //         var endX = e.originalEvent.changedTouches[0].pageX,
+    //             endY = e.originalEvent.changedTouches[0].pageY,
+    //             changeY = endY - startY;
+    //         if (changeY > 50) {
+    //             _this.prve();
+    //         } else if (changeY < -50) {
+    //             this.next();
+    //         }
+    //
+    //     });
+    //     e.preventDefault();
+    // });
+
+        // end function scroll height +100vh
+
 
     // function scroll on click arrow-down
 
