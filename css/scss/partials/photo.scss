@@ -1,0 +1,13 @@
+.carousel-img {
+  width: 100%;
+}
+.column {
+  width:49%;
+  display:inline-block;
+  vertical-align:top;
+}
+.background-img {
+  position: fixed;
+  height: 100%;
+  z-index: -555;
+}
